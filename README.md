@@ -1,2 +1,4 @@
 # ripcurrent.github.ie
-My Coding Blog
+My Random Coding Blog
+
+* [Oracle ODP.NET & .NET Core](OracleNETCore.md)
