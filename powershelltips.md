@@ -26,6 +26,9 @@ Get-DefaultAWSRegion
 Set-AWSCredential -AccessKey [accessKey] -SecretKey [secretKey] default
 Set-DefaultAWSRegion us-east-1
 
+## Azure scripting
+Install-Module -name Az
+
 
 ## IIS recipes
 Excellent backgrounder here:
