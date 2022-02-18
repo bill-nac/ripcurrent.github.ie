@@ -6,3 +6,4 @@ My Random Coding Blog
 * [Powershell](PowershellTips.md)
 * [VS Code](vscode.md)
 * [Bootstrap](bootstrap.md)
+* [Azure Security SC-900 Exam](sc900.md)
