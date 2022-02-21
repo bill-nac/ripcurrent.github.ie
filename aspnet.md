@@ -12,3 +12,7 @@ public class DataTransferObject
 }
 ```
   
+## Logging
+
+If you want to see the logging messages from dependant assemblies you must reference them directly from Top Project. Its not enough to have them referenced by another dependency
+
