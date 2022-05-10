@@ -16,3 +16,7 @@ public class DataTransferObject
 
 If you want to see the logging messages from dependant assemblies you must reference them directly from Top Project. Its not enough to have them referenced by another dependency
 
+## IIS Logging
+1. create "logs" folder under IIS application direction
+2. grant everyone permissions on this folder
+3. update web.config: stdoutLogEnabled="true" 
