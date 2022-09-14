@@ -17,6 +17,9 @@ foreach ($id in Get-CGIPUserPoolList -Select 'UserPools.Id')
     Remove-CGIPUserPool -UserPoolId $id -Force
 } 
 
+## Startup location
+create file profile.ps1 in Documents\WindowsPowershell. Add the line
+Set-Locations C:\
 
 ## AWS scripting
 Install-Module -name AWS.Tools.CognitoIdentityProvider
