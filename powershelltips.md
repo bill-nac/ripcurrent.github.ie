@@ -10,16 +10,20 @@ objects [type]@{}
 Get-Module
 Get-Command -module "ModuleName" *searchstring*
 
-simple loop
+simple loop\
+`
 foreach ($id in Get-CGIPUserPoolList -Select 'UserPools.Id')
 { 
     Write-Output ('Deleting existing pool ' + $id)
     Remove-CGIPUserPool -UserPoolId $id -Force
 } 
-
+`
 ## Startup location
-create file profile.ps1 in Documents\WindowsPowershell. Add the line
+create file profile.ps1 in **Documents\WindowsPowershell**. \
+Add the line: \
+`
 Set-Locations C:\
+`
 
 ## AWS scripting
 Install-Module -name AWS.Tools.CognitoIdentityProvider
