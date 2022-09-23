@@ -5,7 +5,8 @@ Tips on using the React framework
 - [Destructing](#destructing)
 - [Spread Operator](#spread)
 - [Hooks](#useeffect)
-- [Fragments](#fragment)
+- [Fragments](#fragments)
+- [Component Composition](#composition)
 
 # Arrow functions <a name="arrowfunctions"></a>
 if only returning a value, use arrow function expressions with **concise** body  
@@ -83,6 +84,7 @@ const Item = ({title, url, author}) => {
 **useState** is used for values that change over time  
 **useEffect** is used to opt into the lifecycle of your components to introduce side-effects  
 **customHooks** is used if you want to use both of the hooks above  
+**useRef** is used to implement imperative code rather than standard declarative code
 
 # Fragments <a name="fragments"/></a>
 When you want to return sibling elements and not just a single element. 
@@ -94,3 +96,5 @@ const Search = () => (
 <>  
 );  
 ```
+# Component Composition <a name="composition"/></a>
+be aware of the **children** prop
