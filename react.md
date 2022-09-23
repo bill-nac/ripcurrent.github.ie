@@ -79,6 +79,6 @@ const Item = ({title, url, author}) => {
 **Note** Use nested destructuring only when it improves readability!
 
 # Hooks <a name="useeffect"/></a>
-**useState** is used for values that change over time
-**useEffect** is used to opt into the lifecycle of your components to introduce side-effects
+**useState** is used for values that change over time  
+**useEffect** is used to opt into the lifecycle of your components to introduce side-effects  
 **customHooks** 
