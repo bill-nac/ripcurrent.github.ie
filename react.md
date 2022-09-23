@@ -2,7 +2,7 @@
 Tips on using the React framework
 
 - [Arrow functions](#arrowfunctions)
-- [Destructing](#desctructing)
+- [Destructing](#destructing)
 
 
 # Arrow functions <a href="#arrowfunctions"></a>
@@ -31,7 +31,7 @@ const Search = () => {
 # Events
 React synthetic event is a wrapper for the browsers native event
 
-# Destructing <a href="#desctructing"/></a>
+# Destructing <a href="#destructing"/></a>
 ```
 const user = {
   firstName: 'Bill',
