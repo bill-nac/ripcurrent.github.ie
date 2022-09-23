@@ -27,7 +27,7 @@ const Search = () => {
 # Events
 React synthetic event is a wrapper for the browsers native event
 
-# descructing
+# destructing
 ```
 const user = {
   firstName: 'Bill',
