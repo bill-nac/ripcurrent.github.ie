@@ -4,7 +4,7 @@ Tips on using the React framework
 - [Arrow functions](#arrowfunctions)
 - [Destructing](#destructing)
 - [Spread Operator](#spread)
-
+- [useEffect](#useeffect)
 
 # Arrow functions <a name="arrowfunctions"></a>
 if only returning a value, use arrow function expressions with **concise** body  
@@ -77,3 +77,6 @@ const Item = ({title, url, author}) => {
 ```
 
 **Note** Use nested destructuring only when it improves readability!
+
+# useEffect <a name="useeffect"/></a>
+use this hook instead of managing the side-effect in the event handler
