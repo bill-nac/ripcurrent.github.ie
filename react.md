@@ -1,7 +1,11 @@
 ## React
 Tips on using the React framework
 
-# Arrow functions
+- [Arrow functions](#arrowfunctions)
+- [Destructing](#desctructing)
+
+
+# Arrow functions <a href="#arrowfunctions">
 if only returning a value, use arrow function expressions with **concise** body  
 ```
 const Search = () => (  
@@ -27,7 +31,7 @@ const Search = () => {
 # Events
 React synthetic event is a wrapper for the browsers native event
 
-# Destructing
+# Destructing <a href="#desctructing">
 ```
 const user = {
   firstName: 'Bill',
