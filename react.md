@@ -3,6 +3,7 @@ Tips on using the React framework
 
 - [Arrow functions](#arrowfunctions)
 - [Destructing](#destructing)
+- [Spread Operator](#spread)
 
 
 # Arrow functions <a name="arrowfunctions"></a>
@@ -58,8 +59,21 @@ const List({list}) => {
 }
 ```
 
+# Spread Operator <a name="spread"/></a>
+Use the three dots to spread all key/value pairs of an object to another object
+```
+const user = {
+  ...profile,
+  gender: 'male',
+  ...address
+}
+```
 
+this simplifies our components in React
+```
+<Item key={item.key} {...item} />
 
+const Item = ({title, url, author}) => {
+```
 
-
-
+**Note** Use nested destructuring only when it improves readability!
