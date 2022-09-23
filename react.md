@@ -26,3 +26,18 @@ const Search = () => {
 
 # Events
 React synthetic event is a wrapper for the browsers native event
+
+# descructing
+```
+const user = {
+  firstName: 'Bill',
+  lastName: 'Tierney'
+}; 
+
+//Instead of 
+const firstName = user.firstName;
+const lastName = user.lastName;
+
+//can use
+const {firstName, lastName} = user;
+```
