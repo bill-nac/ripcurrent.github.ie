@@ -9,4 +9,4 @@ My Random Coding Blog
 * [Azure Security SC-900 Exam](sc900.md)
 * [Node and NPM](node.md)
 * [React](react.md)
-* [PrimeReact](primereact.md}
+* [PrimeReact](primereact.md)
