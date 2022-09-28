@@ -7,3 +7,5 @@ e.g.
 `
 
 e.g. the version could be *v1.0* or *beta*
+
+Use Pagination for large data requests. In Microsoft Graph, this is done using @odata.nextLink
