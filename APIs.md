@@ -5,3 +5,5 @@ e.g.
 `
 {HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}
 `
+
+e.g. the version could be *v1.0* or *beta*
