@@ -1,6 +1,7 @@
 # ripcurrent.github.ie
 My Random Coding Blog
 
+* [API Best Practices](APIs.md)
 * [Oracle ODP.NET & .NET Core](OracleNETCore.md)
 * [TFS](TFS.md)
 * [Powershell](PowershellTips.md)
