@@ -7,3 +7,5 @@ git clean -xdf --dry-run   : wipe all changes. This should wipe obj/bin folders
 
 ## Configuration
 git config --global core.editor "nano"  : use Nano....wayyyyy easier to get going on
+
+other options like vscode are possible, see [here](https://salferrarello.com/git-commit-message-editor/)
