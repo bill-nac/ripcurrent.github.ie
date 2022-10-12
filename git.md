@@ -2,10 +2,18 @@
 
 ## Useful GIT Commands
 
-git reset --hard    : wipe all changes. Will not remove folders by .dotnet, obj etc  
-git clean -xdf --dry-run   : wipe all changes. This should wipe obj/bin folders
+wipe all changes. Will not remove folders by .dotnet, obj etc  
+`git reset --hard`
+
+wipe all changes. This should wipe obj/bin folders  
+`git clean -xdf --dry-run `
 
 ## Configuration
-git config --global core.editor "nano"  : use Nano....wayyyyy easier to get going on
+use Nano....wayyyyy easier to get going on  
+`git config --global core.editor "nano"`
 
-other options like vscode are possible, see [here](https://salferrarello.com/git-commit-message-editor/)
+other options like vscode are possible, see [here](https://salferrarello.com/git-commit-message-editor/)  
+
+## SSL Certificates
+if you are having problems with SSL, you can ignore error using:  
+`git -c http.sslVerify=false push`
