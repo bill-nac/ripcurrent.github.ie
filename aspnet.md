@@ -111,5 +111,33 @@ finally, sign in
       await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 ```
 
+oh, and finally finally, in the target project Program.cs
+```
+//adds cookie authentication
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+```
 
+## Application Parts
+Very handy for sucking in methods etc in other assemblies
+```
+//this section hooks up the security service
+var assembly1 = typeof(MyProject.Namespace.Controller1).Assembly;
+var assembly2 = typeof(MyProject.Namespace.APIController2).Assembly;
+ApplicationPartManager manager = builder.Services.AddControllersWithViews(config =>
+{
+    var policy = new AuthorizationPolicyBuilder()
+                        .RequireAuthenticatedUser()
+                        .RequireRole(builder.Configuration.GetSection("Security")["DefaultRequiredRole"])
+                        .Build();
+    config.Filters.Add(new AuthorizeFilter(policy));
+}).PartManager;
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
+
+manager.ApplicationParts.Add(new AssemblyPart(assembly1));
+manager.ApplicationParts.Add(new AssemblyPart(assembly2));
+```
 
