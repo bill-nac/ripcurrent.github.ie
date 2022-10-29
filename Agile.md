@@ -1,5 +1,5 @@
 # Agile Learnings
-Some random thoughts, no particular structure at the moment
+Some random thoughts, no particular structure at the moment.
 
 ## The Standup
 well running:
