@@ -18,3 +18,9 @@ well running:
 - no time overrun
 
 gather thoughts, say confidently
+
+## Defects Triage
+content to go here
+
+## Retrospective
+content to go here
