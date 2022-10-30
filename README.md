@@ -2,8 +2,9 @@
 My Random Coding Blog
 
 ## Code
+
+### Web
 * [API Best Practices](APIs.md)
-* [Oracle ODP.NET & .NET Core](OracleNETCore.md)
 * [TFS](TFS.md)
 * [Powershell](PowershellTips.md)
 * [VS Code](vscode.md)
@@ -12,6 +13,12 @@ My Random Coding Blog
 * [Node and NPM](node.md)
 * [React](react.md)
 * [PrimeReact](primereact.md)
+* [HTML](html.md)
+
+### Database
+* [Oracle ODP.NET & .NET Core](OracleNETCore.md)
+
+### Cloud
 
 ## Process
 * [Agile](Agile.md)
