@@ -5,11 +5,7 @@ My Random Coding Blog
 
 ### Web
 * [API Best Practices](APIs.md)
-* [TFS](TFS.md)
-* [Powershell](PowershellTips.md)
-* [VS Code](vscode.md)
 * [Bootstrap](bootstrap.md)
-* [Azure Security SC-900 Exam](sc900.md)
 * [Node and NPM](node.md)
 * [React](react.md)
 * [PrimeReact](primereact.md)
@@ -19,6 +15,17 @@ My Random Coding Blog
 * [Oracle ODP.NET & .NET Core](OracleNETCore.md)
 
 ### Cloud
+* [Azure Security SC-900 Exam](sc900.md)
+
+### Scripting
+* [Powershell](PowershellTips.md)
+
+## Source Control
+* [GIT](git.md)
+* [TFS](TFS.md)
 
 ## Process
 * [Agile](Agile.md)
+
+## Core Editors
+* [VS Code](vscode.md)
