@@ -20,6 +20,9 @@ My Random Coding Blog
 ### Scripting
 * [Powershell](PowershellTips.md)
 
+## Architecture
+* [Monolith](monolith.md)
+
 ## Source Control
 * [GIT](git.md)
 * [TFS](TFS.md)
