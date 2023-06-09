@@ -19,4 +19,4 @@ if you are having problems with SSL, you can ignore error using:
 `git -c http.sslVerify=false push`
 
 ## Learning
-the site https://githubtraining.github.io/training-manual is good but a lot of broken links
+the site https://githubtraining.github.io/training-manual is good but a lot of broken links.
