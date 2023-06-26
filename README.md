@@ -15,6 +15,7 @@ My Random Coding Blog
 * [Oracle ODP.NET & .NET Core](OracleNETCore.md)
 
 ### Cloud
+* [Azure Concepts, Tips & Hints](Azure.md)
 * [Azure Security SC-900 Exam](sc900.md)
 
 ### Scripting
