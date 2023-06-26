@@ -14,4 +14,7 @@ General concepts, hints and tips.
 - create a web application (does not need an App Registration etc)
 - push code to this using GIT. This is a great option, can set this for CI.
 - note the use of logs under *App Service Logs*
-- 
+- Git Workflow:
+  - Actions builds the projects
+  - Deployments can be seen under Environments
+  - The configuration files are saved has .yml with the code
