@@ -10,4 +10,6 @@ General concepts, hints and tips.
 - Use these to register an instance of this application. Other organisations could have an Enterprise Application for your App Registration.
 - You'll see many Enterprise applications listed as this will contain those which are used by your organisation but built but others (e.g. Adobe etc)
   
-
+### Web App
+- create a web application (does not need an App Registration etc)
+- push code to this using GIT
