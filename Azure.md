@@ -12,4 +12,6 @@ General concepts, hints and tips.
   
 ### Web App
 - create a web application (does not need an App Registration etc)
-- push code to this using GIT
+- push code to this using GIT. This is a great option, can set this for CI.
+- note the use of logs under *App Service Logs*
+- 
