@@ -18,3 +18,8 @@ General concepts, hints and tips.
   - Actions builds the projects
   - Deployments can be seen under Environments
   - The configuration files are saved has .yml with the code
+
+#### App Configuration
+- add using the portal
+- for a visual studio project, connect this service to the projects. Right click project and select connected services
+- use the secrets manager to save secrets in development environment to local json file
