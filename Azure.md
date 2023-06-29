@@ -24,8 +24,15 @@ General concepts, hints and tips.
   - Actions builds the projects
   - Deployments can be seen under Environments
   - The configuration files are saved has .yml with the code
+- Alternative to pushing code to GITHub and then using Worflow is:
+  - push code directly to Web App
+  - there is an automatic build under Deployment area
+  - setup your deployment/git options if need be 
 
 #### App Configuration
+the simplest app configuration is just to use the "Configuration" tab in a Wep App blade.
+
+alternative is to use the fully featured App Configuration service.
 - add using the portal
 - for a visual studio project, connect this service to the projects. Right click project and select connected services
 - use the secrets manager to save secrets in development environment to local json file
