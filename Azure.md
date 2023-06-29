@@ -26,7 +26,7 @@ General concepts, hints and tips.
   - The configuration files are saved has .yml with the code
 - Alternative to pushing code to GITHub and then using Worflow is:
   - push code directly to Web App
-  - there is an automatic build under Deployment area
+  - there is an automatic build under Deployment area [Oryx](https://github.com/microsoft/Oryx/tree/main)
   - setup your deployment/git options if need be 
 
 #### App Configuration
