@@ -40,6 +40,7 @@ dotnet user-secrets init
 dotnet user-secrets set ConnectionStrings:AppCondig "<url here>"
 dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore
 ```
+- remember to use this on server you'll need to add the AppConfig endpoint under the App Settings, Connection string area
 
 in the VS project
 - add a model for the Settings
