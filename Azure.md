@@ -57,3 +57,16 @@ builder.Configuration.AddAzureAppConfiguration(connectionString);
 
 ### Secrets Manager
 - use the secrets manager to save secrets in development environment to local json file
+
+### Script to create basic App Service
+```
+az group create --name myResourceGroup --location "West Europe"
+az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
+az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name "BillAzureMonitorTestDebug" --runtime "PHP|8.1" --deployment-local-git
+az webapp config appsettings set --name "BillAzureMonitorTestDebug" --resource-group myResourceGroup --settings DEPLOYMENT_BRANCH='main'
+git clone https://github.com/Azure-Samples/App-Service-Troubleshoot-Azure-Monitor
+cd App-Service-Troubleshoot-Azure-Monitor
+git branch -m main
+git remote add azure https://bill.tierney2@billazuremonitortestdebug.scm.azurewebsites.net/BillAzureMonitorTestDebug.git
+git push azure main
+```
