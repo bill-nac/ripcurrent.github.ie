@@ -29,10 +29,30 @@ General concepts, hints and tips.
   - there is an automatic build under Deployment area [Oryx](https://github.com/microsoft/Oryx/tree/main)
   - setup your deployment/git options if need be 
 
-#### App Configuration
+### App Configuration
 the simplest app configuration is just to use the "Configuration" tab in a Wep App blade.
 
 alternative is to use the fully featured App Configuration service.
 - add using the portal
-- for a visual studio project, connect this service to the projects. Right click project and select connected services
+- save the connection string to secrets manager and add reference using:
+ ```
+dotnet user-secrets init
+dotnet user-secrets set ConnectionStrings:AppCondig "<url here>"
+dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore
+```
+
+in the VS project
+- add a model for the Settings
+- read the connection string, load configuration, add bind to model
+```
+// Retrieve the connection string
+string connectionString = builder.Configuration.GetConnectionString("AppConfig");
+
+// Load configuration from Azure App Configuration
+builder.Configuration.AddAzureAppConfiguration(connectionString);
+
+// Bind configuration "TestApp:Settings" section to the Settings object
+```
+
+### Secrets Manager
 - use the secrets manager to save secrets in development environment to local json file
