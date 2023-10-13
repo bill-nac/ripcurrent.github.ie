@@ -14,7 +14,9 @@ General concepts, hints and tips.
 ### Enterprise Application
 - Use these to register an instance of this application. Other organisations could have an Enterprise Application for your App Registration.
 - You'll see many Enterprise applications listed as this will contain those which are used by your organisation but built but others (e.g. Adobe etc)
-- The enterprise application resource controls what the app can do in our tenant
+- Enterprise applications and App Registrations share the same application id but have different object id's
+- The enterprise application resource controls what the app can do in our tenant 
+- This gets confusing because a user can grant consent from both the Enterprise Applications (service principal) blade and the App Registrations experience in the Azure Portal, but this is only the case for the sake of convenience. The consent is granted from the service principal (enterprise application), but in the UI can be administered from the App Registration so that the user does not need to navigate to Enterprise Apps to grant consent.
   
 ### Web App
 - create a web application (does not need an App Registration etc)
