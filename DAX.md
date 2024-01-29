@@ -19,3 +19,13 @@ DAX works on tables and columns, not cells
 ### SQL
 Relationships. SQL you must state. DAX inherited from the model
 Subqueries. SQL write another query. DAX use Filter
+
+## Syntax
+Standard syntax is
+- 'Table'[Column]. Column Reference. The quotes are not necessary
+- [Measure Name]. Measure Reference.
+The result is the type generated
+
+
+
+
