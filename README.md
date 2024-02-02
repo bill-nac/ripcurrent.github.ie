@@ -13,6 +13,7 @@ My Random Coding Blog
 
 ### Database
 * [Oracle ODP.NET & .NET Core](OracleNETCore.md)
+* [Transaction SQL Tips](SQLServerSQL.md)
 
 ### Cloud
 * [Azure Concepts, Tips & Hints](Azure.md)
