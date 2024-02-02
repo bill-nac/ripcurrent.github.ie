@@ -1,5 +1,22 @@
 # Transaction SQL tips
 
+## Delete duplicates in a table
+This is dead handy
+
+```
+delete T
+FROM
+(
+SELECT *
+, DupRank = ROW_NUMBER() OVER (
+              PARTITION BY [date],  operator, serial_number
+              ORDER BY (SELECT NULL)
+            )
+FROM FleetUtilization
+) AS T
+WHERE DupRank > 1
+```
+
 ## View User Permissions
 Script to view what a SQL users permissions on a server are
 ```
