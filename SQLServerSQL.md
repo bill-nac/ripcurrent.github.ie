@@ -2,8 +2,14 @@
 
 ## Users and Logins
 ```
---select users
-select * from sys.database_principals
+--logins (how you logon to server)
+select * from sys.sql_logins
+
+--users(at the database level)
+select * from sys.database_principals where type ='S'
+
+--select roles
+select * from sys.database_principals where type ='R'
 
 -- user roles
 SELECT    roles.principal_id                            AS RolePrincipalID
