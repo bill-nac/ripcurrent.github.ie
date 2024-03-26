@@ -222,3 +222,16 @@ ORDER BY
     [ObjectType]
 
 ```
+
+## All table record counts
+```
+SELECT t.name       AS table_name
+       ,s.row_count AS row_count
+FROM   sys.tables t
+JOIN   sys.dm_db_partition_stats s
+  ON t.OBJECT_ID = s.OBJECT_ID
+ AND t.type_desc = 'USER_TABLE'
+ AND t.name NOT LIKE '%dss%' --Exclude tables created by SQL Data Sync for Azure.
+ AND s.index_id IN (0, 1)
+ORDER  BY 2 desc;
+```
