@@ -1,5 +1,20 @@
 # Transaction SQL tips
 
+## Security Setup Steps
+- Create a login
+- Create a DataUser from a login
+```
+CREATE USER [db_user] FOR LOGIN [server_login]
+``` 
+- Grant the DataUser connection
+```
+GRANT connect TO [d365_admin_user]
+```
+- Alter Roles to add DataUser Member
+```
+ALTER ROLE [db_owner] ADD MEMBER [d365_admin_user]
+```
+
 ## Users and Logins
 ```
 --logins (how you logon to server)
@@ -222,3 +237,4 @@ ORDER BY
     [ObjectType]
 
 ```
+
