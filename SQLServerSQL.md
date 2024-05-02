@@ -1,14 +1,14 @@
 # Transaction SQL tips
 
-# indexing
+## Useful functions
+- string_split:   select value from string_split('1,2,3',',')
+
+## indexing
 - dont select cols you dont need, possibly more i/o operations to retrieve from other pages
 - always have a clustered index, minimze non clustered
 - add index seperately, not as part ok PK constraint
 - leaf level is bottom of index and contains index columns in their sort order
 - intermediate levels and root
-
-
-
 
 ## Users and Logins
 ```
