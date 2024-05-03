@@ -4,11 +4,12 @@
 - dont select cols you dont need, possibly more i/o operations to retrieve from other pages
 - always have a clustered index, minimze non clustered
 - add index seperately, not as part ok PK constraint
-- leaf level is bottom of index and contains index columns in their sort order
-- intermediate levels and root
-
-
-
+- leaf level is bottom of index and contains index columns in their sort order, intermediate levels and root
+- SARGability predicates:
+  - the Good: =,>,>=,<,<=,IN,BETWEEN,LIKE(prefix)
+  - the Bad: NOT, <>, LIKE (not prefix)
+  - For Composite Index its important to include starting column
+- Fragmentation: what is index maint stragedy. Reorganize or Rebuild
 
 ## Users and Logins
 ```
