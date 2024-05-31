@@ -1,6 +1,20 @@
 # Azure
 General concepts, hints and tips.
 
+## CLI
+logon first
+```
+az login
+```
+then set the account(sub) to use
+```
+az account set --subscription = "Production"
+```
+
+When querying use ```-query``` argument and follow syntax [https://jmespath.org/tutorial.html](https://jmespath.org/tutorial.html)
+
+
+
 ## Applications
 
 ### App Registrations
