@@ -3,6 +3,12 @@ General concepts, hints and tips.
 
 ## Applications
 
+### Functions
+Use the func applications to do all actions related to functions, easier and more capable than az
+```
+func azure functionapp  list-functions customerstatement-func --slot test
+```
+
 ### App Registrations
 - Use App Registration to register *your* application for use with AD
 - for identity provider to know that a user has access to an app, the user and the app must be registered
