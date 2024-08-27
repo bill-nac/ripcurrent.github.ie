@@ -11,6 +11,11 @@ General concepts, hints and tips.
   - The app can request scope permissions e.g. "User.Read" to read the user profile
   - Share a secret with Identifity platform which *proves the apps identity*. (used as our app is confidential). Uses this secret when requesting tokens.
 
+### Service Principals
+- Service principals are a Microsoft Entra application resource you create within your tenant to perform unattended resource and service level operations.
+- They're a unique type of user identity with an application ID and password or certificate.
+- A service principal has only those permissions necessary to perform tasks defined by the roles and permissions for which it is assigned.
+
 ### Enterprise Application
 - Use these to register an instance of this application. Other organisations could have an Enterprise Application for your App Registration.
 - You'll see many Enterprise applications listed as this will contain those which are used by your organisation but built but others (e.g. Adobe etc)
