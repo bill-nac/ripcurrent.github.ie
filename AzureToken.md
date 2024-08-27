@@ -1,5 +1,13 @@
 # Azure Tokens
 
+## Flow Types
+
+|     | Authorization Code Flow | Client Credentials Flow |
+| --- | --- | --- |
+| Use Case | User | Service running without interaction |
+| Authorization | Uses app / browser | Uses client secret |
+
+
 ## Client Credentials Flow to access Graph API
 1. Setup an RBAC Service Principal
 ```
