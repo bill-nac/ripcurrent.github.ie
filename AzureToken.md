@@ -46,3 +46,9 @@ the scope for Graph API is: https://management.azure.com/.default
 On the Application Registration, grant the necessary API Permissions.
 - This might be a Microsoft Graph Application permissions
 - Alternatively RBAC permissions might be needed on the resource (eg resource group)
+
+## Authorization Code Flow to access Graph API
+Following above:
+1. Set the application registration redirect uri to https://localhost
+2. Set the grant type to **Authorization Code**
+3. Scope is https://graph.microsoft.com/User.Read
