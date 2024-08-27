@@ -47,6 +47,8 @@ On the Application Registration, grant the necessary API Permissions.
 - This might be a Microsoft Graph Application permissions
 - Alternatively RBAC permissions might be needed on the resource (eg resource group)
 
+For Client Credentials, ensure that the API permissions has granted User.Read and granted consent for the organisation as per [here](https://www.youtube.com/watch?v=7qt8asY33Aw)
+
 ## Authorization Code Flow to access Graph API
 Following above:
 1. Set the application registration redirect uri to https://localhost
