@@ -18,6 +18,7 @@ My Random Coding Blog
 ### Cloud
 * [Azure Concepts, Tips & Hints](Azure.md)
 * [Azure Security SC-900 Exam](sc900.md)
+* [Azure Logs](AzureLogs.md)
 
 ### Scripting
 * [Powershell](PowershellTips.md)
