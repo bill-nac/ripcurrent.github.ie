@@ -14,5 +14,6 @@
 - 6 default tables create for any use - alert, usage etc
 - interactive retention (6-90 days) and restore retention (7 years)
 - two plan types analytics v basic
-
+- you can add Custom columns or Custom tables. suffixes will be appended
+- 
 
