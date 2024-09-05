@@ -1,14 +1,11 @@
 # Transaction SQL tips
 
-# indexing
+## Indexing
 - dont select cols you dont need, possibly more i/o operations to retrieve from other pages
 - always have a clustered index, minimze non clustered
 - add index seperately, not as part ok PK constraint
 - leaf level is bottom of index and contains index columns in their sort order
 - intermediate levels and root
-
-
-
 
 ## Users and Logins
 ```
@@ -232,3 +229,41 @@ ORDER BY
     [ObjectType]
 
 ```
+
+## Dates
+First day of month
+```
+select DATEADD(mm, DATEDIFF(m,0,GETDATE()),0)
+```
+
+Start and end day for N months, starting -N months ago
+```
+select top 6 ROW_NUMBER() 
+        over(order by a.name) as SiNo,
+        Dateadd(month, ROW_NUMBER() over(order by a.name) , dateadd(month, -6, DATEADD(mm, DATEDIFF(m,0,GETDATE()),0))) as first_of_month,
+        EOMONTH(Dateadd(month, ROW_NUMBER() over(order by a.name) , dateadd(month, -6, DATEADD(mm, DATEDIFF(m,0,GETDATE()),0)))) as end_of_month
+    from sys.all_objects a
+
+```
+Last N weeks, start and end week
+```
+WITH Last10Weeks AS (
+    SELECT 
+        TOP 10 
+        DATEADD(WEEK, -1 * (ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) - 1), 
+        -- Calculate start of week (Monday)
+        DATEADD(DAY, 1 - DATEPART(WEEKDAY, GETDATE()), CONVERT(DATE, GETDATE()))) AS WeekStart,
+        DATEADD(DAY, 7 - DATEPART(WEEKDAY, GETDATE()), 
+        -- Calculate end of week (Sunday)
+        DATEADD(WEEK, -1 * (ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) - 1), CONVERT(DATE, GETDATE()))) AS WeekEnd
+    FROM 
+        sys.objects -- Dummy table to generate rows
+)
+SELECT WeekStart, WeekEnd
+FROM Last10Weeks
+ORDER BY WeekStart;
+```
+
+
+
+
