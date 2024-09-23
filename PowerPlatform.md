@@ -10,3 +10,6 @@ smart, scales, secure
 - use everywhere, low/no
 
 more than just RMDB - Blobs, Logs Files, semi structured
+
+## Power Apps
+- [Power platform admin](admin.powerplatform.microsoft.com) to create/manage environments, view Dataverse analytics
