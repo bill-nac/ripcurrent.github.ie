@@ -60,6 +60,31 @@ builder.Configuration.AddAzureAppConfiguration(connectionString);
 // Bind configuration "TestApp:Settings" section to the Settings object
 ```
 
+### Key Vault and App Configuration
+Add the option for Key Vault Reference retrieval
+```
+builder.Configuration.AddAzureAppConfiguration(options =>
+{
+    options.Connect(builder.Configuration.GetConnectionString("AppConfigEndPoint"));
+
+    options.ConfigureKeyVault(kv =>
+    {
+        kv.SetCredential(new DefaultAzureCredential());
+    });
+});
+```
+The default credential tries using one of a number of credentials to connect. 
+To Use the first, EnvironmentCredential, add the environment variables in **launch.settings.json** (and not launch.json!)
+```
+        "AZURE_TENANT_ID":"<guid>",
+        "AZURE_CLIENT_ID":"<guid>",
+        "AZURE_CLIENT_SECRET":"<guid>"
+```
+On the Key Vault IAM, Add the Service Principal as a Key Vault Secrets User 
+
+
+
+
 ### Secrets Manager
 - use the secrets manager to save secrets in development environment to local json file
 
